@@ -1,0 +1,70 @@
+main h1 {
+    text-align: center;
+    padding-top: 25px;
+    color: var(--text-main-color);
+    font-family: 'Leckerli One', cursive;
+}
+
+.trip {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#destinationLabel {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    color: var(--text-main-color);
+    font-family: 'Leckerli One', cursive;
+    gap: 10px;
+}
+
+.trip__container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.trip__name, .trip__start-date, .trip__duration {
+    padding: 10px;
+    border: 1px solid var(--text-main-color);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-main-color);
+    background-color: var(--background-outer-field-color);
+    font-family: 'Comic Neue', sans-serif;
+    width: 100%;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
+.trip__name::placeholder, .trip__start-date::placeholder, .trip__duration::placeholder {
+    color: var(--text-placeholder-color);
+    font-style: italic;
+    font-family: 'Comic Neue', sans-serif;
+    opacity: 1;
+}
+
+.trip__name:focus, .trip__start-date:focus, .trip__duration:focus {
+    outline: none;
+    border-color: var(--text-main-color);
+    box-shadow: 0 0 5px var(--text-main-color);
+}
+
+@media (max-width: 600px) {
+    .trip__name, .trip__start-date, .trip__duration {
+        max-width: 100%;
+        min-width: 250px;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanIt</title>
+    <link rel="shortcut icon" type="image/png" href="img/planit-tab-icon.png">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+
+            <div class="header__container-logo">
+                <img class="header__logo-image" src="img/planit-icon.svg" alt="PlanIt Logo">
+                <p class="header__logo-text">PlanIt</p>
+            </div>
+
+            <div class="header__container-buttons">
+                <button class="header__button">Save</button>
+                <button class="header__button">Export</button>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="icons__container">
+            <img class="icons__image" src="img/map-icon.svg" alt="">
+            <img class="icons__image" src="img/backpack-icon.svg" alt="">
+            <img class="icons__image" src="img/passport-icon.svg" alt="">
+            <img class="icons__image" src="img/tickets-icon.svg" alt="">
+            <img class="icons__image" src="img/hotel-room-icon.svg" alt="">
+            <img class="icons__image" src="img/signs-icon.svg" alt="">
+            <img class="icons__image" src="img/international-travel-icon.svg" alt="">
+        </div>
+
+        <h1>All About My New Trip</h1>
+
+        <div class="trip" id="trip">
+            <div class="trip__container container" id="tripContainer">
+                <input class="trip__name" id="trip_name" type="text" placeholder="Destination">
+                <input class="trip__start-date" id="trip_start-date" type="date" placeholder="Trip Start Date">
+                <input class="trip__duration" id="trip_duration" type="text" placeholder="Duration">
+            </div>
+        </div>
+
+        <div id="days" class="container"></div>
+
+        <div class="trigger-button-container container">
+            <button id="triggerButton">Plan your trip</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer__container container">
+            <p class="footer__text">© 2025 PlanIt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS---------------------------------------------------------------------------------------------------------------------->
+    <script src="/javascript/script.js"></script>
+
+</body>
+
+</html>

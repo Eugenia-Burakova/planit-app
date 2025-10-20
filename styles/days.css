@@ -1,0 +1,138 @@
+#days {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    width: 100%;
+    height: auto;
+}
+
+.newDiv {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--text-main-color);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-main-color);
+    background-color: var(--background-outer-field-color);
+    font-family: 'Comic Neue', sans-serif;
+    width: 100%;
+    min-width: 0; /* allow flex children to shrink on small screens */
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 400px;
+}
+
+.newDiv h2 {
+    text-align: center;
+    color: var(--text-main-color);
+    font-family: 'Leckerli One', cursive;
+    margin-bottom: 10px;
+}
+
+.newDiv input {
+    padding: 8px;
+    border: 1px solid var(--text-main-color);
+    font-style: italic;
+    border-radius: 6px;
+    font-size: 14px;
+    flex: 1 1 auto;    /* input fills available space */
+    min-width: 0;      /* prevents overflow in flex layout */
+    box-sizing: border-box;
+}
+
+.newDiv button {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: var(--text-main-color);
+    background-color: var(--background-outer-field-color);
+    border: 1px solid var(--text-main-color);
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 0 0 auto;    /* keep button sized to its content */
+}
+
+.activityDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.activityGrid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-rows: auto;
+    grid-auto-flow: row;
+    gap: 10px;
+    align-items: center;
+    justify-items: stretch;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.activityRow {
+    display: inline-flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: stretch;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    grid-column: 1 / -1;
+}
+
+.activityRow p {
+    margin: 0;
+    padding: 4px 8px;
+    font-size: 16px;
+    color: var(--text-main-color);
+    background-color: var(--background-inner-field-color);
+    border-radius: 4px;
+    word-break: break-word;
+}
+
+.activityRow button {
+    padding: 4px 8px;
+    font-size: 12px;
+    color: var(--text-main-color);
+    background-color: var(--background-outer-field-color);
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* responsive: stack on narrow screens */
+@media (max-width: 600px) {
+    .newDiv {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+        min-width: 0;
+        max-width: 100%;
+        min-width: 250px;
+    }
+    .newDiv input {
+        width: 100%;
+    }
+    .activityDiv {
+        flex-direction: column;
+    }
+    .activityRow {
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}

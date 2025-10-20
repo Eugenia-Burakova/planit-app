@@ -1,0 +1,8 @@
+:root {
+    --text-main-color: rgba(24, 51, 60, 1);
+    --text-placeholder-color: rgba(24, 51, 60, 0.6);
+    --background-main-light-color: rgb(224, 246, 255);
+    --background-outer-field-color: rgba(250, 254, 255, 1);
+}
+
+/*we can put these variables in :root in common.css
