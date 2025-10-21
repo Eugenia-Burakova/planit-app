@@ -30,28 +30,6 @@
     font-family: 'Leckerli One', cursive;
 }
 
-.header__container-buttons {
-    display: flex;
-    gap: 20px;
-}
-
-.header__button {
-    background-color: var(--background-outer-field-color);
-    border: 1px solid var(--text-main-color);
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: var(--text-main-color);
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: leckerli one, cursive;
-}
-
-.header__button:hover {
-    background-color: var(--text-main-color);
-    color: var(--background-outer-field-color);
-}
-
 @media (max-width: 600px) {
     .header__container {
         display: flex;
@@ -60,10 +38,6 @@
     }
 
     .header__container-logo {
-        gap: 10px;
-    }
-
-    .header__container-buttons {
         gap: 10px;
     }
 }
